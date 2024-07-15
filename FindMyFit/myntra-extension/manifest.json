@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Myntra Trendy Clothes",
+  "version": "1.0",
+  "description": "Shows trendy clothes from Myntra",
+  "permissions": [
+    "activeTab"
+  ],
+  "action": {
+    "default_popup": "sidebar.html",
+    "default_icon": {
+      "16": "icons/image.png",
+      "48": "icons/image.png",
+      "128": "icons/image.png"
+    }
+  }
+}

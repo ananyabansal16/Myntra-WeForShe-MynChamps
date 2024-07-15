@@ -1,0 +1,102 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  color: #29303E;
+  background-color: #ffd9bc;
+  /* overflow: hidden; */
+}
+
+.fit{
+  color: #E72744;
+}
+
+#sidebar {
+  padding: 10px;
+
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.header .logo {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+h1 {
+  font-size: 18px;
+  margin: 0;
+}
+
+#clothes-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.cloth-item {
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cloth-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.cloth-item .title {
+  font-size: 14px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.cloth-item {
+  transition: transform 0.2s, box-shadow 0.2s;
+  /* Transition for smooth hover effect */
+}
+
+.cloth-item:hover {
+  transform: scale(1.028);
+  /* Slightly scale up */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Enhanced shadow on hover */
+}
+
+.buy-now {
+  transition: background-color 0.2s;
+  /* Smooth transition for background color */
+}
+
+.buy-now:hover {
+  background-color: #F05524;
+  /* Change to a different color on hover */
+}
+
+.cloth-item .buy-now {
+  background-color: #F13AB1;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.cloth-item .buy-now:hover {
+  background-color: #F05524;
+}
+

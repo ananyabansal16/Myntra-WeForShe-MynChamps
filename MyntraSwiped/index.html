@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Swipe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="myntraLogo.png" alt="Myntra Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/men">MEN</a></li>
+                    <li><a href="/women">WOMEN</a></li>
+                    <li><a href="/kids">KIDS</a></li>
+                    <li><a href="/living">HOME & LIVING</a></li>
+                    <li><a href="/beauty">BEAUTY</a></li>
+                    <li><a href="/studio">STUDIO </a></li>
+                    <li><a href="#" id="cards-tab">CARD </a></li> <!-- Add an ID for JavaScript -->
+                </ul>
+            </nav>
+            <div class="user-options">
+                <input type="text" placeholder="Search for products, brands and more">
+                <ul>
+                    <li>
+                        <div>
+                            <img src="profile-icon.png" alt="Profile">
+                            <span>Profile</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="wishlist.png" alt="Wishlist">
+                            <span>Wishlist</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="bagIcon.png" alt="Bag">
+                            <span>Bag</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="background-image">
+    </div>
+
+    <!-- Popup Container -->
+    <div class="popup-container" id="popup-container">
+        <div class="popup-card">
+            <img src="card1.png" alt="Clothing Image" id="popup-image">
+            <div class="popup-info">
+                <h2 id="popup-title">FITHUB</h2>
+                <p id="popup-description">Floral Printed Anarkali Pure Cotton Kurta </p>
+                <p id="popup-description">Rs. 1199 (Incl. of all taxes)</p>
+                <div class="options">
+                    <button class="btn-like">Right Swipe</button>
+                    <button class="btn-dislike">Left Swipe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

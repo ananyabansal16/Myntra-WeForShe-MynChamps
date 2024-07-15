@@ -1,0 +1,219 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.user-options {
+    display: flex;
+    align-items: center;
+}
+
+.user-options input[type="text"] {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.user-options ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.user-options ul li {
+    margin-right: 10px;
+}
+
+.user-options ul li div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-options ul li img {
+    height: 24px;
+    width: auto;
+    margin-bottom: 5px;
+}
+
+.user-options ul li span {
+    font-size: 14px;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.background-image {
+    background-image: url('background2.png'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Popup container */
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Popup card */
+.popup-card {
+    background: #fff;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+}
+
+.popup-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.popup-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: 'Georgia', serif; /* Better font for heading */
+}
+
+.popup-info p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Verdana', sans-serif; /* Better font for paragraph */
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-like, .btn-dislike {
+    margin: 0 0px; /* Adjust margin for closer alignment */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #d35c8b; /* Baby pink background color */
+    color: #000; /* Change text color to black */
+    border: none;
+    border-radius: 25px; /* Increase border-radius for more rounded edges */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.btn-like {
+    border-top-right-radius: 0; /* Adjust border radius for left button */
+    border-bottom-right-radius: 0; /* Adjust border radius for left button */
+}
+
+.btn-dislike {
+    border-top-left-radius: 0; /* Adjust border radius for right button */
+    border-bottom-left-radius: 0; /* Adjust border radius for right button */
+}
+
+.btn-like:hover, .btn-dislike:hover {
+    background-color: #fa36b9; /* Lighter shade on hover */
+    color: #191616; /* Change text color to white on hover */
+}
+
+.popup-card {
+    background-color: #ffffff; /* Set baby pink background color */
+}
+
+.popup-card .options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+.popup-card .btn-dislike {
+    border: 2px solid rgb(13, 13, 13); /* Example border for dislike button */
+}
+
+.popup-card .btn-like {
+    border: 2px solid rgb(13, 13, 13); /* Example border for dislike button */
+}
+
+.popup-card.swipe-right {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.popup-card.swipe-left {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+#points-display {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: #ffeb3b;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
